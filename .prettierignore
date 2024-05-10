@@ -1,0 +1,6 @@
+bootstrap/ssr
+public
+vendor
+node_modules
+./composer.lock
+bun.lockb
