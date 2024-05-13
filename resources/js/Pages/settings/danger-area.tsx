@@ -1,5 +1,5 @@
 import { useRef, useState, FormEventHandler } from 'react';
-import { useForm } from '@inertiajs/react';
+import { Head, useForm } from '@inertiajs/react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
@@ -43,6 +43,8 @@ export default function DangerArea() {
     };
 
     return (
+        <>
+        <Head title="Danger Area" />
         <Card className="space-y-6">
             <CardHeader>
                 <CardTitle>Delete Account</CardTitle>
@@ -105,6 +107,7 @@ export default function DangerArea() {
                 </AlertDialog>
             </CardContent>
         </Card>
+        </>
     );
 }
 

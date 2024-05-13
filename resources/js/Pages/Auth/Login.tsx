@@ -1,6 +1,6 @@
 import { useEffect, FormEventHandler } from 'react';
 import { InputError } from '@/components/input-error';
-import { Head, Link, useForm } from '@inertiajs/react';
+import { Link, useForm } from '@inertiajs/react';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -71,7 +71,7 @@ export default function Login({ status, canResetPassword }: { status?: string; c
                             checked={data.remember}
                             onCheckedChange={(value: boolean) => setData('remember', value)}
                         />
-                        <span className="ms-2 text-sm text-gray-600">Remember me</span>
+                        <span className="ms-2 text-sm text-muted-foreground">Remember me</span>
                     </label>
 
                     {canResetPassword && (
